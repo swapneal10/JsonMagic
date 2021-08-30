@@ -277,9 +277,21 @@ function getClass(obj) {
     });
 
     // JSONata Query Editor
-
+    var queryEditor = ace.edit("queryEditor");
+    queryEditor.setTheme("ace/theme/chrome");
+    queryEditor.getSession().setMode("ace/mode/json");
+    queryEditor.getSession().setUseWorker(false)
+    queryEditor.getSession().on('change', function () {
+        onQueryChange();
+    });
 
     // JSON Results Editor
+    var resultsEditor = ace.edit("json-results");
+    resultsEditor.setTheme("ace/theme/chrome");
+    resultsEditor.getSession().setMode("ace/mode/json");
+    resultsEditor.getSession().setUseWorker(false)
+    resultsEditor.getSession().on('change', function () {
+        onResultChange();
 
     });
 
