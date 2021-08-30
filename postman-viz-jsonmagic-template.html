@@ -114,59 +114,10 @@
     <button onclick="download('query.txt',query)" style="float:right;">Download Query </button>
     </span>
 
-    <div class="pretty-split-pane-frame">
-        <div class="split-pane fixed-left">
-            <div class="split-pane-component" id="left-component">
-                <div class="pretty-split-pane-component-inner">
-                    <!-- This div is added for styling purposes only. It's not part of the split-pane plugin. -->
-                    <i>JSON Data</i>
-                    <!-- JSONata Result -->
-                    <div id="json-data">test</div>
-                </div>
-            </div>
-
-            <div class="split-pane-divider" id="my-divider"></div>
-
-            <div class="split-pane-component" id="right-component">
-                <div class="split-pane fixed-right">
-                    <div class="split-pane-component" id="inner-left-component">
-                        <div class="pretty-split-pane-component-inner">
-                            <i>JSONata Expression </i> <a href="http://docs.jsonata.org/overview.html"> Docs </a>
-                            <br>
-                            <div style="float:right; ">
-                                <button class="runbtn" onclick="onRunQuery()">run </button>
-                                <br>
-                                <p style="padding-left:20px;">sync <input type="checkbox" id="syncCheckBox"
-                                        class="syncCheckBox" name="sync" checked></p>
-                            </div>
-
-                           <!-- JSONata Query -->
-                           <div id="queryEditor">$</div>
-                            <br>
-                            <i>JSONata Results</i>
-                            <!-- JSONata Result -->
-                            <div id="json-results"></div>
-                        </div>
-                    </div>
-
-                    <div class="split-pane-divider" id="inner-my-divider"></div>
-
-                    <div class="split-pane-component" id="inner-right-component">
-                        <div class="pretty-split-pane-component-inner">
-                            <!-- Tableify Result -->
-                            <div id="myTable" style="padding-top:25px;" class="myTable"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>                               
+                     
 </body>
 
-<!-- JSONata Editor -->
-<script src="https://cdn.jsdelivr.net/npm/jsonata/jsonata.min.js"></script>
-<!-- SplitJS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+
 <!-- Tableify-->
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/tableify@1.1.0/index.min.js"></script> -->
@@ -326,21 +277,10 @@ function getClass(obj) {
     });
 
     // JSONata Query Editor
-    var queryEditor = ace.edit("queryEditor");
-    queryEditor.setTheme("ace/theme/chrome");
-    queryEditor.getSession().setMode("ace/mode/json");
-    queryEditor.getSession().setUseWorker(false)
-    queryEditor.getSession().on('change', function () {
-        onQueryChange();
-    });
+
 
     // JSON Results Editor
-    var resultsEditor = ace.edit("json-results");
-    resultsEditor.setTheme("ace/theme/chrome");
-    resultsEditor.getSession().setMode("ace/mode/json");
-    resultsEditor.getSession().setUseWorker(false)
-    resultsEditor.getSession().on('change', function () {
-        onResultChange();
+
     });
 
     // Postman Data
