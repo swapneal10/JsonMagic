@@ -1,5 +1,5 @@
 // JSON Magic Postman Template
-const templateUrl = "https://raw.githubusercontent.com/dexterlabora/json-magic/master/postman/postman-viz-jsonmagic-template.html"
+const templateUrl = "https://github.com/swapneal10/JsonMagic/blob/1567d0a78b475dfcbe59f8d592cce55aa2c26185/postman-viz-jsonmagic-template.html"
 
 // Load template
 pm.sendRequest(templateUrl,  (_, res) => { 
