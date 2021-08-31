@@ -9,4 +9,4 @@ Postman supports the ability to "Visualize" your response data. By using these s
 
 # tl;dr
 
-The embed script assigns the Postman visualization template to the `postman-viz-jsonmgagic-template.html` file, and then renders the web visualization
+The embed script assigns the Postman visualization template to the `postman-viz-jsonmgagic-template.html` file, and then renders the web visualization.
