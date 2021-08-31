@@ -11,7 +11,6 @@ $^(status).{
 }
 ```
 
-
 ## Networks - Hyperlinks
 
 `{{baseUrl}}/organizations/:organizationId/networks`
