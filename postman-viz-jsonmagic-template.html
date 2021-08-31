@@ -114,7 +114,12 @@
                         <div class="pretty-split-pane-component-inner">
                             <i>JSONata Expression </i> <a href="http://docs.jsonata.org/overview.html"> Docs </a>
                             <br>
-
+                            <div style="float:right; ">
+                                <button class="runbtn" onclick="onRunQuery()">run </button>
+                                <br>
+                                <p style="padding-left:20px;">sync <input type="checkbox" id="syncCheckBox"
+                                        class="syncCheckBox" name="sync" checked></p>
+                            </div>
 
                             <!-- JSONata Query -->
                             <div id="queryEditor">$</div>
