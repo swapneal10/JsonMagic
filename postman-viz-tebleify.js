@@ -1,7 +1,6 @@
 // Access the response data JSON as a JavaScript object
 const res = pm.response.json();
 
-
 // ------------
 // - Template -
 // ------------
